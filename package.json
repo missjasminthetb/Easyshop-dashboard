@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@syncfusion/ej2-charts": "^20.4.54"
+  }
+}

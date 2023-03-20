@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    box-sizing: 0;
+    margin: 0;
+    font-family: Arial;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* padding: 20px; */
+}
+nav {
+    display: grid;
+    border-bottom: 1px rgb(212, 211, 211) solid ;
+    grid-column: 1/13;
+}
+.logo {
+    display: flex;
+    padding: 10px;
+    border-right: 1px rgb(212, 211, 211) solid ;
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+.icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+}
+.first i {
+    margin-bottom: 10px;
+    background-color: rgb(199, 199, 248);
+    color: blue;
+}
+.bell i {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+    border: 1px rgb(212, 211, 211) solid ;
+}
+.text {
+    padding: 0px 10px;
+}
+.text h5 {
+    font-weight: normal;
+}
+.middleBar{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 5/9;
+    grid-row: 1/2;
+}
+#search {
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(247, 245, 245);
+    padding: 10px;
+    margin-right: 70px;
+    width: 400px;
+}
+.profile {
+    display: flex;
+    border-left: 1px rgb(212, 211, 211) solid ;
+    margin: 10px;
+    padding: 0 10px;
+    grid-column: 9/13;
+    grid-row: 1/2;
+}
+.img {
+    background-color: blue;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.body {
+    display: grid;
+    grid-column: 1/13;
+    background-color: rgb(247, 245, 245);
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px rgb(212, 211, 211) solid ;
+    grid-column: 1/5;
+    background-color: white;
+}
+.top i {
+    margin-right: 10px;
+}
+.bottom i {
+    margin-right: 10px;
+}
+li {
+    list-style-type: none;
+    margin:30px;
+}
+.main{
+    background-color: rgb(247, 245, 245);
+    grid-column: 5/13;
+}
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 30px;
+}
+.welcome h4 {
+    margin-bottom: 5px;
+}
+#date {
+    border-radius: 5px;
+    border: 1px rgb(212, 211, 211) solid;
+    cursor: pointer;
+    padding: 5px;
+}
+.pdf {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.side {
+    display: flex;
+}
+.first {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.10);
+}
+.box h4 {
+    font-weight: normal;
+}
+.box h5{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.box p {
+    font-size: 12px;
+}
+.boxtop{
+    display: flex;
+}
+.one strong, .three strong{
+    color: green;
+}
+.two strong, .four strong {
+    color: red;
+}
+.second {
+    /* display: flex; */
+    display: grid;
+    /* justify-content: space-between; */
+}
+#container{
+    display: flex;
+    flex-direction: column;
+}
+.salesActivity {
+    background-color: white;
+    margin:0px 20px;
+    border-radius: 10px;
+    grid-row: 1/2;
+    width: 70%;
+    padding: 5px;
+}
+.revenue {
+    background-color: white;
+    margin:0px  20px;
+    border-radius: 10px;
+    grid-row: 1/2;
+    width: 70%;
+}
+.third {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.orders-container {
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.orders-container img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+.orders-container span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(247, 245, 245);
+    margin: 20px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+#transaction{
+    font-size: 12px;
+}
+#transaction li{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+}
+.delivered button {
+    color: rgb(8, 94, 8);
+    background-color: rgb(194, 243, 194);
+}
+.pending button {   
+    color: rgb(187, 2, 2);
+    background-color: rgb(252, 176, 176);
+}
+.sales {
+    padding: 20px;
+}
+.name {
+    flex-direction: column;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.name p {
+    font-weight: normal;
+}
+#pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#price {
+    margin-left: 70px;
+    font-weight: bold;
+}
